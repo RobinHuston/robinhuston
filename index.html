@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robin Huston | IT Systems Engineer & Security Analyst</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-900 text-slate-100 font-sans antialiased">
+
+    <header class="border-b border-slate-800 bg-slate-900/80 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="text-center sm:text-left">
+                <h1 class="text-2xl font-bold tracking-tight text-white">Robin Huston</h1>
+                <p class="text-sm text-emerald-400 font-mono">Systems Engineering & Security Operations</p>
+            </div>
+            <div class="flex gap-4 text-sm font-medium">
+                <a href="#experience" class="hover:text-emerald-400 transition">Experience</a>
+                <a href="#homelab" class="hover:text-emerald-400 transition">Homelab</a>
+                <a href="#certs" class="hover:text-emerald-400 transition">Certifications</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-12 space-y-20">
+
+        <section class="space-y-4 max-w-3xl">
+            <h2 class="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+                Building resilient infrastructure. Hardening security posture.
+            </h2>
+            <p class="text-lg text-slate-400 leading-relaxed">
+                With over 13 years of experience in IT systems engineering and security operations, I specialize in optimizing enterprise systems, deploying robust telemetry architectures, and managing complex network infrastructures.
+            </p>
+            <div class="flex flex-wrap gap-3 pt-2">
+                <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-md text-xs font-mono text-slate-300">Debian / RHEL</span>
+                <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-md text-xs font-mono text-slate-300">SIEM & Telemetry</span>
+                <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-md text-xs font-mono text-slate-300">Wazuh</span>
+                <span class="px-3 py-1 bg-slate-800 border border-slate-700 rounded-md text-xs font-mono text-slate-300">Virtualization & Core Networking</span>
+            </div>
+        </section>
+
+        <section id="certs" class="bg-slate-800/50 border border-slate-800 rounded-xl p-6 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="space-y-1 text-center md:text-left">
+                <h3 class="text-lg font-bold text-white">Professional Credentials</h3>
+                <p class="text-sm text-slate-400">Validated technical expertise in core security principles and cloud environments.</p>
+            </div>
+            <div class="flex flex-wrap gap-4 justify-center">
+                <div class="bg-slate-900 border border-emerald-500/30 px-4 py-3 rounded-lg text-center shadow-lg min-w-[140px]">
+                    <div class="text-emerald-400 font-bold text-sm">CompTIA</div>
+                    <div class="text-xs text-slate-300 font-medium">Security+ CE</div>
+                </div>
+                <div class="bg-slate-900 border border-blue-500/30 px-4 py-3 rounded-lg text-center shadow-lg min-w-[140px]">
+                    <div class="text-blue-400 font-bold text-sm">Microsoft</div>
+                    <div class="text-xs text-slate-300 font-medium">SC-500 Track</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="homelab" class="space-y-6">
+            <div class="space-y-1">
+                <h3 class="text-2xl font-bold tracking-tight text-white">Featured Homelab Deployments</h3>
+                <p class="text-slate-400 text-sm">Active environments built for testing, security simulation, and network hardening.</p>
+            </div>
+            <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+                
+                <div class="bg-slate-800/40 border border-slate-800 rounded-xl p-5 space-y-4 hover:border-slate-700 transition flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-start">
+                            <span class="text-emerald-400 text-xl"><i class="fa-solid fa-shield-halved"></i></span>
+                            <span class="text-xs font-mono text-slate-500">SIEM / SecOps</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-white">Wazuh SIEM Integration</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Centralized telemetry architecture using a dedicated Wazuh manager and distributed agents across local endpoints.</p>
+                    </div>
+                    <div class="pt-4 flex flex-wrap gap-1.5">
+                        <span class="text-[11px] font-mono bg-slate-900 px-2 py-0.5 rounded text-slate-400">Wazuh</span>
+                        <span class="text-[11px] font-mono bg-slate-900 px-2 py-0.5 rounded text-slate-400">Debian</span>
+                        <span class="text-[11px] font-mono bg-slate-900 px-2 py-0.5 rounded text-slate-400">XML Decoders</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/40 border border-slate-800 rounded-xl p-5 space-y-4 hover:border-slate-700 transition flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-start">
+                            <span class="text-emerald-400 text-xl"><i class="fa-solid fa-server"></i></span>
+                            <span class="text-xs font-mono text-slate-500">DNS / Hardening</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-white">Pi-hole Telemetry Pipeline</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Configured custom XML decoders to forward local DNS query logs into SIEM for anomaly detection and egress tracking.</p>
+                    </div>
+                    <div class="pt-4 flex flex-wrap gap-1.5">
+                        <span class="text-[11px] font-mono bg-slate-900 px-2 py-0.5 rounded text-slate-400">Pi-hole</span>
+                        <span class="text-[11px] font-mono bg-slate-900 px-2 py-0.5 rounded text-slate-400">Syslog</span>
+                        <span class="text-[11px] font-mono bg-slate-900 px-2 py-0.5 rounded text-slate-400">SIEM</span>
+                    </div>
+                </div>
+
+                <div class="bg-slate-800/40 border border-slate-800 rounded-xl p-5 space-y-4 hover:border-slate-700 transition flex flex-col justify-between">
+                    <div class="space-y-2">
+                        <div class="flex justify-between items-start">
+                            <span class="text-emerald-400 text-xl"><i class="fa-solid fa-network-wired"></i></span>
+                            <span class="text-xs font-mono text-slate-500">Infrastructure</span>
+                        </div>
+                        <h4 class="text-lg font-bold text-white">Hybrid Core Virtualization</h4>
+                        <p class="text-sm text-slate-400 leading-relaxed">Enterprise simulation lab running mixed RHEL and Debian environments on bare-metal hypervisors backed by Cisco routing hardware.</p>
+                    </div>
+                    <div class="pt-4 flex flex-wrap gap-1.5">
+                        <span class="text-[11px] font-mono bg-slate-900 px-2 py-0.5 rounded text-slate-400">RHEL</span>
+                        <span class="text-[11px] font-mono bg-slate-900 px-2 py-0.5 rounded text-slate-400">Debian 13</span>
+                        <span class="text-[11px] font-mono bg-slate-900 px-2 py-0.5 rounded text-slate-400">Cisco iOS</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="experience" class="space-y-6">
+            <div class="space-y-1">
+                <h3 class="text-2xl font-bold tracking-tight text-white">Professional Experience</h3>
+                <p class="text-slate-400 text-sm">A history of engineering stable, secure infrastructure platforms.</p>
+            </div>
+            <div class="border-l border-slate-800 ml-3 space-y-8 pl-6 relative">
+                
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1.5 bg-emerald-500 w-3 h-3 rounded-full border-4 border-slate-900"></div>
+                    <div class="space-y-1">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                            <h4 class="text-lg font-bold text-white">Senior Systems Engineer & Security Analyst</h4>
+                            <span class="text-xs font-mono text-emerald-400 bg-emerald-500/10 px-2 py-0.5 rounded">Present</span>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Leading deployment, hardening, and modernization across enterprise-level systems infrastructure. Driving incident response architectures, continuous logging optimization, and endpoint monitoring strategy.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <div class="absolute -left-[31px] top-1.5 bg-slate-700 w-3 h-3 rounded-full border-4 border-slate-900"></div>
+                    <div class="space-y-1">
+                        <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center">
+                            <h4 class="text-lg font-bold text-slate-200">Systems Engineer / Infrastructure Lead</h4>
+                            <span class="text-xs font-mono text-slate-500">13+ Years Total IT Track</span>
+                        </div>
+                        <p class="text-sm text-slate-400 leading-relaxed">
+                            Designed, scaled, and operationalized core directory networks, directory services, and Linux systems infrastructure. Established standard procedures for continuous backup strategies, identity management, and compliance enforcement.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="border-t border-slate-800 mt-20 bg-slate-950/40">
+        <div class="max-w-5xl mx-auto px-6 py-8 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-slate-500">
+            <p>&copy; 2026 Robin Huston. All rights reserved.</p>
+            <div class="flex gap-4">
+                <a href="https://linkedin.com" target="_blank" class="hover:text-slate-300"><i class="fa-brands fa-linkedin text-base"></i></a>
+                <a href="https://github.com" target="_blank" class="hover:text-slate-300"><i class="fa-brands fa-github text-base"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
